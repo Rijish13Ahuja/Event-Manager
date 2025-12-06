@@ -72,3 +72,6 @@ event-manager/
 ```bash
 git clone https://github.com/your-username/event-manager.git
 cd event-manager
+```
+
+<img width="943" height="937" alt="image" src="https://github.com/user-attachments/assets/ffa40ba5-d41b-4d8d-8e87-06187ed932c1" />
