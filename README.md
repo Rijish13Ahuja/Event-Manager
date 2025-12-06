@@ -36,49 +36,9 @@ A role-based, multi-timezone scheduling system built using the **MERN stack** wh
 - Material UI used only for form inputs
 
 ## 🧠 Architecture & Code Structure
-backend/
-├── models/
-│   ├── Profile.js
-│   ├── Event.js
-│   └── AuditLog.js
-├── routes/
-│   ├── profiles.js
-│   └── events.js
-├── utils/
-│   └── timezoneUtils.js
-├── server.js
-└── package.json
-
-client/
-├── src/
-│   ├── components/
-│   │   ├── Layout/
-│   │   │   ├── Sidebar.jsx
-│   │   │   └── Dashboard.jsx
-│   │   ├── Profiles/
-│   │   │   ├── ProfileList.jsx
-│   │   │   └── CreateProfile.jsx
-│   │   ├── Events/
-│   │   │   ├── EventList.jsx
-│   │   │   ├── CreateEvent.jsx
-│   │   │   └── EditEvent.jsx
-│   │   └── AuditLog/
-│   │       └── AuditLogViewer.jsx
-│   ├── store/
-│   │   ├── slices/
-│   │   │   ├── profileSlice.js
-│   │   │   └── eventSlice.js
-│   │   └── store.js
-│   ├── services/
-│   │   ├── api.js
-│   │   ├── profileService.js
-│   │   └── eventService.js
-│   ├── utils/
-│   │   └── timezone.js
-│   ├── App.jsx
-│   └── main.jsx
-├── index.css
-└── package.json
+event-manager/
+├── backend/ # Node.js + Express API (in-memory DB for demo)
+└── client/ # React + Vite + Redux Toolkit frontend
 ### 🔹 Backend
 - Express routes for `/profiles` and `/events`
 - UTC storage model for global correctness
